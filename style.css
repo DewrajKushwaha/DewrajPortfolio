@@ -283,6 +283,10 @@ nav a:hover {
 section {
     width: 100vw;
 }
+.skills{
+    display: flex;
+    flex-wrap: wrap;
+}
 
 .container1 {
     width: 43.5rem;
@@ -514,7 +518,7 @@ section {
 
 .main-text {
     padding-top: 1.125rem;
-    margin-top: 2rem;
+    margin: 2rem;
 }
 
 .main-text h2 {
