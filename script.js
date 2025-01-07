@@ -47,10 +47,10 @@ addSkills('react', 'react', '#f1c40f', '98%')
 addSkills('nodejs', 'nodejs', '#147bbc', '76%')
 addSkills('mongodb', 'mongodb', '#f7dc6f', '87%')
 
-var count=2
+var count = 2
 function professional(per = "50%", name) {
     const div = document.getElementById("professional");
-    div.insertAdjacentHTML('beforeend', 
+    div.insertAdjacentHTML('beforeend',
         `<div class="radial-bar">
                     <svg x="0px" y="0px" viewBox="0 0 200 200">
                         <circle class="progress-bar" cx="100" cy="100" r="80">                      </circle>
@@ -60,7 +60,7 @@ function professional(per = "50%", name) {
                     <div class="text">${name}</div>
                 </div>`
     )
-    count +=1;
+    count += 1;
 
 }
 professional('65%', 'Teamwork');
@@ -68,3 +68,19 @@ professional('45%', 'Communication');
 professional('55%', 'Problem Solving');
 professional('5%', 'Leadership');
 professional('61%', 'Time Management');
+
+const open = document.getElementById('open');
+const close = document.getElementById('close');
+
+function toggleMenu() {
+    if (open.style.display === 'block') {
+        open.style.display = 'none'
+        close.style.display = 'block'
+        document.getElementById('navbar').style.display = 'block'
+    }
+    else {
+        open.style.display = 'block'
+        close.style.display = 'none'
+        document.getElementById('navbar').style.display = 'none'
+    }
+}

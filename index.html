@@ -7,204 +7,227 @@
     <title>Dewraj Kumar Kushwaha</title>
     <link rel="stylesheet" href="style.css">
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
-    
+
 </head>
 
 <body>
 
     <header class="header">
         <a href="#" class="logo">Portfolio</a>
-        <nav>
+        <nav id="navbar">
             <a href="#home" style="--i:1" class="active">Home</a>
             <a href="#about" style="--i:2">About</a>
-            <a href="#services" style="--i:3" >Skill</a>
-            <a href="#skills" style="--i:4" >Resume</a>
-            <a href="#contact" style="--i:5" >Contact</a>
+            <a href="#services" style="--i:3">Skill</a>
+            <a href="#skills" style="--i:4">Resume</a>
+            <a href="#contact" style="--i:5">Contact</a>
         </nav>
+        <i onclick="toggleMenu()">
+            <i class='bx bx-menu menu' id="open"></i>
+            <i class='bx bx-x menu' id="close"></i>
+        </i>
     </header>
-  
-        <section class="home">
-            <div class="home-content">
-                <h3>Hello, It's Me</h3>
-                <h1>Dewraj Kushwaha</h1>
-                <h3>And I'm a <span class="text"> </span> </h3>
-                <p>I'm a full stack web developer with experience for over 3 project <br> expertise is to create a
-                    website, frontend and backend both. </p>
-                <div class="home-sci">
-                    <a href="#" style="--i:7">
-                        <li class="bx bxl-facebook"></li>
-                    </a>
-                    <a href="#" style="--i:8">
-                        <li class="bx bxl-instagram"></li>
-                    </a>
-                    <a href="#" style="--i:9">
-                        <li class="bx bxl-whatsapp"></li>
-                    </a>
-                    <a href="#" style="--i:10">
-                        <li class="bx bxl-github"></li>
-                    </a>
-                    <a href="#" style="--i:11">
-                        <li class="bx bxl-linkedin"></li>
-                    </a>
-                </div>
-                <a href="#" class="btn-box">About me</a>
-            </div>
-            <span class="main-image">
-                <div>
-                    <img src="./src/images/profile-pic (1) (1).png" width="400px" height="400px">
-                </div>
-            </span>
-        </section>
 
-        <section class="about" id="about">
-            <div class="about-img">
-                <img src="./src/images/profile-pic (2).png"alt="">
+    <section class="home">
+        <div class="home-content">
+            <h3>Hello, It's Me</h3>
+            <h1>Dewraj Kushwaha</h1>
+            <h3>And I'm a <span class="text"> </span> </h3>
+            <p>I'm a full stack web developer with experience for over 3 project <br> expertise is to create a
+                website, frontend and backend both. </p>
+            <div class="home-sci">
+                <a href="#" style="--i:7">
+                    <li class="bx bxl-facebook"></li>
+                </a>
+                <a href="#" style="--i:8">
+                    <li class="bx bxl-instagram"></li>
+                </a>
+                <a href="#" style="--i:9">
+                    <li class="bx bxl-whatsapp"></li>
+                </a>
+                <a href="#" style="--i:10">
+                    <li class="bx bxl-github"></li>
+                </a>
+                <a href="#" style="--i:11">
+                    <li class="bx bxl-linkedin"></li>
+                </a>
             </div>
-            <div class="about-text">
-                <h2>About <span> Me</span></h2>
-                <h4>Full Stack Developer</h4>
-                <p>
-                    I'm Dewraj Kumar, a full-stack developer with a passion for creating innovative and user-friendly web applications. My expertise spans across the entire development stack, from crafting responsive front-ends to building robust back-end systems.
-
-I'm proficient in a wide range of technologies, including the MERN stack (MongoDB, Express.js, React.js, Node.js), Flask, and various other libraries and frameworks. I'm also comfortable with data analysis using Pandas and leveraging RESTful APIs for seamless communication between client and server.
-
-My dedication lies in delivering high-quality software solutions that solve real-world problems. I believe in writing clean, maintainable code and collaborating effectively in Agile environments to ensure successful project outcomes.
-                </p>
-                <a href="#" class="btn-box">More About Me</a> 
-            </div>
-
-        </section>
-
-        <section>
-            <div class="services" >
-                <div class="container">
-                    <h1 class="sub-title">My <span>Services</span></h1>
-                    <div class="services-list">
-                        <div>
-                            <i class="bx bx-code"></i>
-                            <h2>UI/UX Design </h2>
-                            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Debitis, rerum! Explicabo voluptatum dignissimos consectetur nam eveniet beatae numquam, reprehenderit accusantium? Voluptates inventore architecto eius expedita necessitatibus incidunt, soluta atque exercitationem doloremque aliquam alias consequatur, assumenda saepe, nulla maxime omnis accusamus ratione blanditiis quasi?</p>
-                            <a href="#" class="read"> learn more </a>
-                        </div>
-                        <div>
-                            <i class="bx bx-crop"></i>
-                            <h2>UI/UX Design </h2>
-                            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Debitis, rerum! Explicabo voluptatum dignissimos consectetur nam eveniet beatae numquam, reprehenderit accusantium? Voluptates inventore architecto eius expedita necessitatibus incidunt, soluta atque exercitationem doloremque aliquam alias consequatur, assumenda saepe, nulla maxime omnis accusamus ratione blanditiis quasi?</p>
-                            <a href="#" class="read"> learn more </a>
-                        </div>
-                        <div>
-                            <i class="bx bxl-apple"></i>
-                            <h2>UI/UX Design </h2>
-                            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Debitis, rerum! Explicabo voluptatum dignissimos consectetur nam eveniet beatae numquam, reprehenderit accusantium? Voluptates inventore architecto eius expedita necessitatibus incidunt, soluta atque exercitationem doloremque aliquam alias consequatur, assumenda saepe, nulla maxime omnis accusamus ratione blanditiis quasi?</p>
-                            <a href="#" class="read"> learn more </a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <h1 class="sub-title">My <span>Skills</span></h1>
-        <section class="skills">
-            <div class="container1" id="Skills">
-                <h1 class="heading1"> Technical Skills</h1>
-                <div class="Technical-bar">
-                    <div class="bar">
-                        <i class="bx bxl-html5"></i>
-                        <div class="info">
-                            <span>HTML</span>
-                        </div>
-                        <div class="progress-line html">
-                            <span></span>
-                        </div>
-                    </div>
-                   
-                </div>
-            </div>
-            <div class="container1">
-                <h1 class="heading1" >Professional Skills</h1>
-                <div class="radial-bars" id="professional" >
-                    <div class="radial-bar">
-                        <svg x="0px" y="0px" viewBox="0 0 200 200">
-                            <circle class="progress-bar" cx="100" cy="100" r="80">                      </circle>
-                            <circle class="path path-1" cx="100" cy="100" r="80">                      </circle>
-                        </svg>
-                        <div class="percentage">90%</div>
-                        <div class="text">creativity</div>
-                    </div>
-                </div>
-            </div>
-        </section>
-        <section>
-            <div id="Portfolio" class="project">
-                <div class="main-text project">
-                    <h2>Latest <span>Project</span></h2>
-                    <div class="portfolio-content">
-                        <div class="row" >
-                            <img src="./src/images/agri farma.png" alt="">
-                            <div class="layer">
-                                <h5>AGRI FARM</h5>
-                                <p> Crop recommendation and disease detection system using machine learning</p>
-                                <a href="#"> <i class="bx bx-link-external" style="color: aliceblue;"></i> </a>
-                            </div>
-                        </div>
-                        <div class="row" >
-                            <img src="./src/images/Weather.png" alt="">
-                            <div class="layer">
-                                <h5>Weather Forecasting</h5>
-                                <p> Khow your environments </p>
-                                <a href="#"> <i class="bx bx-link-external" style="color: aliceblue;"></i> </a>
-                            </div>
-                        </div>
-                        <div class="row" >
-                            <img src="./src/images/calculator.png" alt="">
-                            <div class="layer">
-                                <h5>Scientific Calculator</h5>
-                                <p> A scientific calculator for long calculation. </p>
-                                <a href="#"> <i class="bx bx-link-external" style="color: aliceblue;"></i> </a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-        <section class="contact" id="contact">
-            <div class="contact-text">
-                <h2>Get in <span>Touch</span></h2>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero non sit, earum expedita officia esse ut. Quibusdam eius nesciunt repellendus sapiente commodi ea!</p>
-                <div class="contact-list">
-                    <li class="bx bxs-send">kushwahadewraj@gmail.com</li>
-                    <li class="bx bxs-phone">+91 9576336295</li>
-                </div>
-                <div class="contact-icons">
-                    <a href=""><i class="bx bxl-facebook-circle"></i> </a>
-                    <a href=""><i class="bx bxl-instagram"></i> </a>
-                    <a href=""><i class="bx bxl-whatsapp"></i> </a>
-                    <a href=""><i class="bx bxl-linkedin"></i> </a>
-                </div>
-            </div>
-            <div class="contact-form">
-                <form action=" ">
-                    <input type="" placeholder="Enter your name" required>
-                    <input type="email" placeholder="Enter your email" required>
-                    <input type="" placeholder="Enter your subject">
-                    <textarea name="" id="" cols="40" rows="10" placeholder="Enter your message" required></textarea>
-                    <input type="submit" value="submit" class="send">
-                </form>
-            </div>
-        </section>
-
-        <div class="last-text">
-            <p>Developed with love by Dewraj Kumar Kushwaha 2025 </p>
+            <a href="#" class="btn-box">About me</a>
         </div>
-        <a href="#" class="top"><i class="bx bx-up-arrow-alt"></i></a>
+        <span class="main-image">
+            <div>
+                <img src="./src/images/profile-pic (1) (1).png" width="400px" height="400px">
+            </div>
+        </span>
+    </section>
+
+    <section class="about" id="about">
+        <div class="about-img">
+            <img src="./src/images/profile-pic (2).png" alt="">
+        </div>
+        <div class="about-text">
+            <h2>About <span> Me</span></h2>
+            <h4>Full Stack Developer</h4>
+            <p>
+                I'm Dewraj Kumar, a full-stack developer with a passion for creating innovative and user-friendly web
+                applications. My expertise spans across the entire development stack, from crafting responsive
+                front-ends to building robust back-end systems.
+
+                I'm proficient in a wide range of technologies, including the MERN stack (MongoDB, Express.js, React.js,
+                Node.js), Flask, and various other libraries and frameworks. I'm also comfortable with data analysis
+                using Pandas and leveraging RESTful APIs for seamless communication between client and server.
+
+                My dedication lies in delivering high-quality software solutions that solve real-world problems. I
+                believe in writing clean, maintainable code and collaborating effectively in Agile environments to
+                ensure successful project outcomes.
+            </p>
+            <a href="#" class="btn-box">More About Me</a>
+        </div>
+
+    </section>
+
+    <section>
+        <div class="services">
+            <div class="container">
+                <h1 class="sub-title">My <span>Services</span></h1>
+                <div class="services-list">
+                    <div>
+                        <i class="bx bx-code"></i>
+                        <h2>UI/UX Design </h2>
+                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Debitis, rerum! Explicabo
+                            voluptatum dignissimos consectetur nam eveniet beatae numquam, reprehenderit accusantium?
+                            Voluptates inventore architecto eius expedita necessitatibus incidunt, soluta atque
+                            exercitationem doloremque aliquam alias consequatur, assumenda saepe, nulla maxime omnis
+                            accusamus ratione blanditiis quasi?</p>
+                        <a href="#" class="read"> learn more </a>
+                    </div>
+                    <div>
+                        <i class="bx bx-crop"></i>
+                        <h2>UI/UX Design </h2>
+                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Debitis, rerum! Explicabo
+                            voluptatum dignissimos consectetur nam eveniet beatae numquam, reprehenderit accusantium?
+                            Voluptates inventore architecto eius expedita necessitatibus incidunt, soluta atque
+                            exercitationem doloremque aliquam alias consequatur, assumenda saepe, nulla maxime omnis
+                            accusamus ratione blanditiis quasi?</p>
+                        <a href="#" class="read"> learn more </a>
+                    </div>
+                    <div>
+                        <i class="bx bxl-apple"></i>
+                        <h2>UI/UX Design </h2>
+                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Debitis, rerum! Explicabo
+                            voluptatum dignissimos consectetur nam eveniet beatae numquam, reprehenderit accusantium?
+                            Voluptates inventore architecto eius expedita necessitatibus incidunt, soluta atque
+                            exercitationem doloremque aliquam alias consequatur, assumenda saepe, nulla maxime omnis
+                            accusamus ratione blanditiis quasi?</p>
+                        <a href="#" class="read"> learn more </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <h1 class="sub-title">My <span>Skills</span></h1>
+    <section class="skills">
+        <div class="container1" id="Skills">
+            <h1 class="heading1"> Technical Skills</h1>
+            <div class="Technical-bar">
+                <div class="bar">
+                    <i class="bx bxl-html5"></i>
+                    <div class="info">
+                        <span>HTML</span>
+                    </div>
+                    <div class="progress-line html">
+                        <span></span>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+        <div class="container1">
+            <h1 class="heading1">Professional Skills</h1>
+            <div class="radial-bars" id="professional">
+                <div class="radial-bar">
+                    <svg x="0px" y="0px" viewBox="0 0 200 200">
+                        <circle class="progress-bar" cx="100" cy="100" r="80"> </circle>
+                        <circle class="path path-1" cx="100" cy="100" r="80"> </circle>
+                    </svg>
+                    <div class="percentage">90%</div>
+                    <div class="text">creativity</div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section>
+        <div id="Portfolio" class="project">
+            <div class="main-text project">
+                <h2>Latest <span>Project</span></h2>
+                <div class="portfolio-content">
+                    <div class="row">
+                        <img src="./src/images/agri farma.png" alt="">
+                        <div class="layer">
+                            <h5>AGRI FARM</h5>
+                            <p> Crop recommendation and disease detection system using machine learning</p>
+                            <a href="#"> <i class="bx bx-link-external" style="color: aliceblue;"></i> </a>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <img src="./src/images/Weather.png" alt="">
+                        <div class="layer">
+                            <h5>Weather Forecasting</h5>
+                            <p> Khow your environments </p>
+                            <a href="#"> <i class="bx bx-link-external" style="color: aliceblue;"></i> </a>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <img src="./src/images/calculator.png" alt="">
+                        <div class="layer">
+                            <h5>Scientific Calculator</h5>
+                            <p> A scientific calculator for long calculation. </p>
+                            <a href="#"> <i class="bx bx-link-external" style="color: aliceblue;"></i> </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="contact" id="contact">
+        <div class="contact-text">
+            <h2>Get in <span>Touch</span></h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero non sit, earum expedita officia esse ut.
+                Quibusdam eius nesciunt repellendus sapiente commodi ea!</p>
+            <div class="contact-list">
+                <li class="bx bxs-send">kushwahadewraj@gmail.com</li>
+                <li class="bx bxs-phone">+91 9576336295</li>
+            </div>
+            <div class="contact-icons">
+                <a href=""><i class="bx bxl-facebook-circle"></i> </a>
+                <a href=""><i class="bx bxl-instagram"></i> </a>
+                <a href=""><i class="bx bxl-whatsapp"></i> </a>
+                <a href=""><i class="bx bxl-linkedin"></i> </a>
+            </div>
+        </div>
+        <div class="contact-form">
+            <form action=" ">
+                <input type="" placeholder="Enter your name" required>
+                <input type="email" placeholder="Enter your email" required>
+                <input type="" placeholder="Enter your subject">
+                <textarea name="" id="" cols="40" rows="10" placeholder="Enter your message" required></textarea>
+                <input type="submit" value="submit" class="send">
+            </form>
+        </div>
+    </section>
+
+    <div class="last-text">
+        <p>Developed with love by Dewraj Kumar Kushwaha 2025 </p>
+    </div>
+    <a href="#" class="top"><i class="bx bx-up-arrow-alt"></i></a>
 
 
 
 
 
-        <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
     <script src="script.js"></script>
-   
+
 </body>
 
 </html>
