@@ -242,7 +242,7 @@ body {
 .sub-title {
     text-align: center;
     font-size: 3.75rem;
-    padding-bottom: 4.375rem;
+    margin: 3rem 0;
 }
 
 .sub-title span {
@@ -326,7 +326,6 @@ section {
 
 .skills {
     display: flex;
-    padding: 2rem;
 }
 
 .container1 {
@@ -347,7 +346,7 @@ section {
 }
 
 .Technical-bar .bar {
-    margin-top: 2.5rem;
+    margin-top: 2rem;
 }
 
 .Technical-bar .bar:first-child {
@@ -560,6 +559,7 @@ section {
 .main-text {
     padding-top: 1.125rem;
     margin: 2rem;
+    margin-bottom: 5rem;
 }
 
 .main-text h2 {
@@ -658,11 +658,11 @@ section {
     align-items: center;
     gap: 1.875rem;
     padding-left: 1.875rem;
-    margin-top: 8.125rem;
+    margin-top: 3rem;
 }
 
 .contact-text h2 {
-    font-size: 5.625rem;
+    font-size: 3.5rem;
     line-height: 1;
     text-align: center;
 }
@@ -904,6 +904,8 @@ form textarea {
 
     .sub-title {
         margin-top: 3rem;
+        font-size: 3.75rem;
+        text-align: center;
     }
 
     .main-text h2 {
@@ -917,6 +919,7 @@ form textarea {
 
     .container1 {
         padding: 0;
+        margin: 1rem;
     }
 
     .contact-form form {
@@ -932,7 +935,7 @@ form textarea {
         display: block;
     }
     .container1 {
-        margin-top: 2rem;
+        margin-top: 1.5rem;
     }
     .img{
         width: 250px;
@@ -942,7 +945,15 @@ form textarea {
         padding-left: 1rem;
         padding-right: 1rem;
     }
-
+    .main-text h2 {
+       font-size: 2.5rem;
+    }
+    .sub-title{
+        font-size: 2.5rem;
+    }
+    .contact-text h2 {
+        font-size: 2.5rem;
+    }
     .header {
         justify-content: space-around;
         width: 100%;
@@ -999,6 +1010,7 @@ form textarea {
 
     .btn-box {
         padding: 0.5rem 1rem;
+        margin-top: 0.5rem;
         /* Adjust button size for mobile */
     }
 
@@ -1033,12 +1045,79 @@ form textarea {
 }
 
 @media (max-width:376px) {
+
     .home-sci a {
-        width: 2rem;
-        height: 2rem;
-        font-size: 1rem;
+        justify-content: space-evenly;
+        width: 2.5rem;
+        height: 2.5rem;
+        font-size: 1.2rem;
         margin: 0;
         margin: 1rem 0.6375rem;
         
+    }
+    .home {
+        padding-left: 0.5rem;
+        padding-right: 0.5rem;
+    }
+
+    .home-content p {
+        font-size: 1.2rem;
+        letter-spacing: 0.25px;
+    }
+    .home-content h3:nth-of-type(2) {
+        margin-bottom: 1rem;
+    }
+    .aboutme{
+        margin-top: 1rem;
+        position: relative;
+        display: flex;
+        justify-content: center;
+        align-items: center; 
+    }
+    .about {
+        margin: 0;
+        padding: 0.5rem;
+    }
+    .about-text p {
+        color: aliceblue;
+        font-size: 1.2rem;
+        letter-spacing: 0.25px;
+        margin-bottom: 1rem;
+    }
+    .about-img img {
+        padding-bottom: 0px;
+    }
+    
+    .container {
+        padding: 1rem;
+    }
+    .container1 {
+        margin: 0.5rem;
+    }
+    .services-list div {
+        background: transparent;
+        padding:2rem 1rem;
+        font-size: 1.2rem;
+        letter-spacing: 0.25px;
+    }
+   
+    .skil{
+        display: flex;
+        gap: 6px;
+    }
+    .main-text h2 {
+        margin: 1rem 0;
+    }
+    .main-text {
+        margin: 1rem;
+    }
+    .portfolio-content {
+        padding-top: 0;
+    }
+    .contact{
+        margin-top: 3rem;
+    }
+    .contact-form form input, form textarea {
+        width: 100%;
     }
 }

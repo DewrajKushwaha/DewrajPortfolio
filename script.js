@@ -17,6 +17,8 @@ function addSkills(iconName, name, clr = "#0e5", per = '50%') {
     div2.className = 'info'
     const span = document.createElement('span')
     span.textContent = name.toUpperCase();
+    const skil=document.createElement('div');
+    skil.className='skil';
     const div3 = document.createElement('div');
     div3.className = 'progress-line ' + iconName.toLowerCase();
     div3.innerHTML = `<span style="width:${per}"></span>`
@@ -30,10 +32,11 @@ function addSkills(iconName, name, clr = "#0e5", per = '50%') {
     document.head.appendChild(style);
 
     div2.appendChild(span);
-    div.appendChild(i);
-    div.appendChild(div2);
+    skil.appendChild(i)
+    skil.appendChild(div2)
+    // div.appendChild(i);
+    div.appendChild(skil);
     div.appendChild(div3);
-
 
     document.querySelector('.Technical-bar').appendChild(div);
 
