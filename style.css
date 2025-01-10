@@ -326,6 +326,7 @@ section {
 
 .skills {
     display: flex;
+    padding: 2rem;
 }
 
 .container1 {
@@ -866,9 +867,7 @@ form textarea {
 }
 
 
-
-
-@media (max-width:1024px) {
+@media (max-width:1023px) {
     section {
         flex-wrap: wrap;
         justify-content: center;
@@ -932,7 +931,13 @@ form textarea {
     .header i {
         display: block;
     }
-
+    .container1 {
+        margin-top: 2rem;
+    }
+    .img{
+        width: 250px;
+        height: 250px;
+    }
     .home {
         padding-left: 1rem;
         padding-right: 1rem;
@@ -1020,5 +1025,20 @@ form textarea {
     .contact-text h4 {
         font-size: 1rem;
         /* Adjust font size for mobile */
+    }
+    .top i{
+        font-size: 1rem;
+    }
+    
+}
+
+@media (max-width:376px) {
+    .home-sci a {
+        width: 2rem;
+        height: 2rem;
+        font-size: 1rem;
+        margin: 0;
+        margin: 1rem 0.6375rem;
+        
     }
 }
