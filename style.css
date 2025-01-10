@@ -66,13 +66,12 @@ body {
     color: var(--neon);
 }
 
-#open{
+.header i{
     display: none;
-   
 }
+
 #close{
     display: none;
-    
 }
 .menu{
     position: absolute;
@@ -908,6 +907,9 @@ form textarea {
 }
 
 @media (max-width:768px) {
+    .header i{
+        display: block;
+    }
     #open{
         display: block;
     }
