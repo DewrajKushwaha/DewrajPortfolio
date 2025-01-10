@@ -389,7 +389,7 @@ section {
 }
 
 .progress-line.html span {
-    width: 40%;
+    width: 70%;
 }
 
 .progress-line span::after {
@@ -406,7 +406,7 @@ section {
 }
 
 .progress-line.html span::after {
-    content: '40%';
+    content: '70%';
 }
 
 .progress-line span::before {
@@ -504,31 +504,31 @@ section {
 
 @keyframes animate-path2 {
     100% {
-        stroke-dashoffset: 175;
+        stroke-dashoffset: 75;
     }
 }
 
 @keyframes animate-path3 {
     100% {
-        stroke-dashoffset: 50;
+        stroke-dashoffset: 90;
     }
 }
 
 @keyframes animate-path4 {
     100% {
-        stroke-dashoffset: 175;
+        stroke-dashoffset: 100;
     }
 }
 
 @keyframes animate-path5 {
     100% {
-        stroke-dashoffset: 50;
+        stroke-dashoffset: 165;
     }
 }
 
 @keyframes animate-path6 {
     100% {
-        stroke-dashoffset: 175;
+        stroke-dashoffset: 45;
     }
 }
 
@@ -612,7 +612,6 @@ section {
     overflow: hidden;
     display: flex;
     flex-direction: column;
-    align-items: center;
     justify-content: center;
     text-align: center;
     padding: 0 2.5rem;
@@ -630,11 +629,15 @@ section {
     font-size: 1rem;
     line-height: 1.8;
 }
-
+.layer .project-icons{
+    display: flex;
+    justify-content: space-around;
+}
 .layer i {
-    color: #ff004f;
-    margin-top: 1.25rem;
-    font-size: 1.25rem;
+    /* color: (57, 102, 250) */
+    color: black;
+    margin-top: 1.5rem;
+    font-size: 1.5rem;
     background: #fff;
     width: 3.75rem;
     height: 3.75rem;
@@ -655,7 +658,6 @@ section {
 .contact {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    align-items: center;
     gap: 1.875rem;
     padding-left: 1.875rem;
     margin-top: 3rem;
@@ -1119,5 +1121,8 @@ form textarea {
     }
     .contact-form form input, form textarea {
         width: 100%;
+    }
+    .contact-icons i {
+        margin: 1.875rem 0.675rem;
     }
 }

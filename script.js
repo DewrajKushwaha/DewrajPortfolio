@@ -17,8 +17,8 @@ function addSkills(iconName, name, clr = "#0e5", per = '50%') {
     div2.className = 'info'
     const span = document.createElement('span')
     span.textContent = name.toUpperCase();
-    const skil=document.createElement('div');
-    skil.className='skil';
+    const skil = document.createElement('div');
+    skil.className = 'skil';
     const div3 = document.createElement('div');
     div3.className = 'progress-line ' + iconName.toLowerCase();
     div3.innerHTML = `<span style="width:${per}"></span>`
@@ -41,14 +41,13 @@ function addSkills(iconName, name, clr = "#0e5", per = '50%') {
     document.querySelector('.Technical-bar').appendChild(div);
 
 }
-addSkills('css3', 'css', '#147bbc', '90%')
-addSkills('python', 'python', '#c32ec9', '75%')
-addSkills('javascript', 'javascript', '#f7dc6f', '97%')
-addSkills('html5', 'html5', '#f1c40f', '93%')
-addSkills('mysql', 'mysql', '#c32ec9', '45%')
-addSkills('react', 'react', '#f1c40f', '98%')
-addSkills('nodejs', 'nodejs', '#147bbc', '76%')
-addSkills('mongodb', 'mongodb', '#f7dc6f', '87%')
+addSkills('css3', 'css', '#147bbc', '63%')
+addSkills('python', 'python', '#ffde57', '65%')
+addSkills('javascript', 'javascript', '#f7dc6f', '57%')
+addSkills('html5', 'html5', '#f1c40f', '75%')
+addSkills('react', 'react', '#f1c40f', '55%')
+addSkills('nodejs', 'nodejs', '#147bbc', '65%')
+addSkills('mongodb', 'mongodb', '#00ed64', '57%')
 
 var count = 2
 function professional(per = "50%", name) {
@@ -66,11 +65,11 @@ function professional(per = "50%", name) {
     count += 1;
 
 }
-professional('65%', 'Teamwork');
-professional('45%', 'Communication');
-professional('55%', 'Problem Solving');
-professional('5%', 'Leadership');
-professional('61%', 'Time Management');
+professional('85%', 'Teamwork');
+professional('78%', 'Communication');
+professional('75%', 'Problem Solving');
+professional('65%', 'Leadership');
+professional('92%', 'Time Management');
 
 const open = document.getElementById('open');
 const close = document.getElementById('close');
@@ -87,3 +86,38 @@ function toggleMenu() {
         document.getElementById('navbar').style.display = 'none'
     }
 }
+
+function validEmail(email) {
+    const regex = /^[\w-\.]+@([\w-]+\.)+[\w-]{2,4}$/g
+    return regex.test(email)
+}
+
+document.querySelector('form').addEventListener('submit', function (event) {
+    event.preventDefault();
+
+    const name = document.getElementById('name').value;
+    const email = document.getElementById('emailid').value;
+    const subject = document.getElementById('subject').value;
+    const message = document.getElementById('textarea').value;
+
+    if (!validEmail(email)) {
+        document.getElementById('email-error').style.display = 'block'
+        return;
+    } else {
+        document.getElementById('email-error').style.display = 'none'
+    }
+
+    emailjs.send('service_y1x1tzb', 'template_dhs5tb3', {
+        from_name: name,
+        email_id: email,
+        subject: subject,
+        message: message
+    })
+        .then(function (response) {
+            console.log('SUCCESS', response.status, response.text);
+            alert('Message sent successfully')
+        }, function (err) {
+            console.log('FAILED to send email', err);
+            alert('Sorry Failed to send message. Please try again.')
+        })
+})
