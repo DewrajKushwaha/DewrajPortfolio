@@ -27,13 +27,14 @@ body {
     align-items: center;
     z-index: 10;
 }
-.header::before{
+
+.header::before {
     content: "";
     position: absolute;
     top: 0;
     width: 100%;
     height: 100%;
-    background:rgba(0, 0, 0, 0.1);
+    background: rgba(0, 0, 0, 0.1);
     backdrop-filter: blur(50px);
 }
 
@@ -66,14 +67,15 @@ body {
     color: var(--neon);
 }
 
-.header i{
+.header i {
     display: none;
 }
 
-#close{
+#close {
     display: none;
 }
-.menu{
+
+.menu {
     position: absolute;
     right: 5%;
     top: 1.5rem;
@@ -84,11 +86,12 @@ body {
     border-radius: 6px;
     animation: slideTop .5s ease forwards;
 }
-.menu:hover{
+
+.menu:hover {
     transform: scale(1.2);
     color: var(--neon);
     box-shadow: 0 0 5px var(--neon),
-    0 0 15px var(--neon);
+        0 0 15px var(--neon);
 }
 
 .home {
@@ -180,7 +183,7 @@ body {
     animation: slideTop 1s ease forwards;
     animation-delay: 2s;
     box-shadow: 0 0 5px var(--neon),
-    0 0 15px var(--neon);
+        0 0 15px var(--neon);
 }
 
 .btn-box:hover {
@@ -207,6 +210,7 @@ body {
 .about-text h2 {
     font-size: 3.75rem;
     text-align: center;
+    margin-bottom: 2rem;
 }
 
 .about-text h2 span {
@@ -317,15 +321,15 @@ body {
 }
 
 section {
-    width: 100vw;
+    width: 100%;
 }
-.skills{
+
+.skills {
     display: flex;
-    flex-wrap: wrap;
 }
 
 .container1 {
-    width: 43.5rem;
+    width: 100%;
     height: auto;
     padding: 3rem;
 }
@@ -582,7 +586,7 @@ section {
     border-radius: 20px;
     border-right: 0.625rem;
     transition: background 0.5s, transform 0.5s;
-    box-shadow: 1px 1px  20px #012290f7, 1px 1px 40px #012290f7;
+    box-shadow: 1px 1px 20px #012290f7, 1px 1px 40px #012290f7;
 
 }
 
@@ -593,7 +597,7 @@ section {
     border-radius: 0.5rem;
     display: block;
     transition: transform 0.5s;
-    
+
 }
 
 .layer {
@@ -864,9 +868,7 @@ form textarea {
 
 
 
-
-
-@media (max-width: 1199px) {
+@media (max-width:1024px) {
     section {
         flex-wrap: wrap;
         justify-content: center;
@@ -879,12 +881,17 @@ form textarea {
         height: auto;
     }
 
+    .about-img {
+        margin: 0 auto;
+    }
+
     .container {
         padding: 2rem;
     }
 
     .about {
         grid-template-columns: repeat(1, 1fr);
+        margin-top: 3rem;
     }
 
     .services-list {
@@ -893,10 +900,24 @@ form textarea {
 
     .portfolio-content {
         grid-template-columns: repeat(2, 1fr);
+        padding-top: 3rem;
+    }
+
+    .sub-title {
+        margin-top: 3rem;
+    }
+
+    .main-text h2 {
+        margin: 3rem 0;
     }
 
     .contact {
         grid-template-columns: repeat(1, 1fr);
+        padding: 0 1rem;
+    }
+
+    .container1 {
+        padding: 0;
     }
 
     .contact-form form {
@@ -904,16 +925,29 @@ form textarea {
         flex-direction: column;
         align-items: center;
     }
+
 }
 
 @media (max-width:768px) {
-    .header i{
+    .header i {
         display: block;
     }
-    #open{
+
+    .home {
+        padding-left: 1rem;
+        padding-right: 1rem;
+    }
+
+    .header {
+        justify-content: space-around;
+        width: 100%;
+    }
+
+    #open {
         display: block;
     }
-    #navbar{
+
+    #navbar {
         position: absolute;
         top: 99%;
         width: 100%;
@@ -923,11 +957,68 @@ form textarea {
         display: none;
         animation: slideTop .5s ease forwards;
     }
-    #navbar a{
+
+    #navbar a {
         display: block;
         font-size: 1.1rem;
         font-weight: 600;
         margin: 1.5rem 0;
         text-align: center;
+    }
+
+    .menu {
+        display: block;
+        /* Show menu on mobile */
+    }
+
+
+    .home-content h1 {
+        font-size: 2.5rem;
+        /* Adjust font size for mobile */
+    }
+
+    .home-content h3 {
+        font-size: 1.5rem;
+        /* Adjust font size for mobile */
+    }
+
+    .about-text h2 {
+        font-size: 2.5rem;
+        /* Adjust font size for mobile */
+    }
+
+    .about-text h4 {
+        font-size: 1.5rem;
+        /* Adjust font size for mobile */
+    }
+
+    .btn-box {
+        padding: 0.5rem 1rem;
+        /* Adjust button size for mobile */
+    }
+
+    .services-list {
+        grid-template-columns: 1fr;
+        /* Stack services on mobile */
+    }
+
+    .portfolio-content {
+        grid-template-columns: 1fr;
+        /* Stack portfolio items on mobile */
+    }
+
+    .contact {
+        grid-template-columns: 1fr;
+        /* Stack contact items on mobile */
+    }
+
+    .contact-text h2 {
+        font-size: 3rem;
+        /* Adjust font size for mobile */
+    }
+
+    .contact-text h4 {
+        font-size: 1rem;
+        /* Adjust font size for mobile */
     }
 }
