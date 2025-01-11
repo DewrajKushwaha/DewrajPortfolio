@@ -1,7 +1,7 @@
 :root {
-    --blue: #1e90ff;
+    --blue: #07ebc991;
     --white: #ffffff;
-    --neon: #0ef;
+    --neon: #07edce;
 }
 
 * {
@@ -12,8 +12,8 @@
 }
 
 body {
-    color: #ededed;
-    background-color: #081c29;
+    color: var(--white);
+    background-color: #083832;
 }
 
 .header {
@@ -42,7 +42,7 @@ body {
 .logo {
     position: relative;
     font-size: 1.5rem;
-    color: #fff;
+    color: var(--white);
     text-decoration: none;
     font-weight: 600;
     cursor: default;
@@ -53,7 +53,7 @@ body {
 #navbar a {
     display: inline-block;
     font-size: 1.5rem;
-    color: #ffff;
+    color: var(--white);
     text-decoration: none;
     font-weight: 500;
     margin-left: 2rem;
@@ -220,20 +220,20 @@ body {
 .about-text h4 {
     font-size: 1.8125rem;
     font-weight: 600;
-    color: #fff;
+    color: var(--white);
     line-height: 1.7;
     margin: 0.9375rem 0 1.875rem;
 }
 
 .about-text p {
-    color: aliceblue;
+    color: var(--white);
     font-size: 1.25rem;
     line-height: 1.4;
     margin-bottom: 4rem;
 }
 
 #services {
-    color: aliceblue;
+    color: var(--white);
     font-size: 1.25rem;
     line-height: 1.4;
     margin-bottom: 4rem;
@@ -268,8 +268,8 @@ body {
     border-radius: 20px;
     border-right: 0.625rem;
     transition: background 0.5s, transform 0.5s;
-    box-shadow: 1px 1px 20px #012290f7,
-        1px 1px 40px #012290f7;
+    box-shadow: 1px 1px 20px var(--blue),
+        1px 1px 40px var(--blue);
 }
 
 .services-list div i {
@@ -367,6 +367,7 @@ section {
     animation: showText 0.5s 1s linear forwards;
 }
 
+
 .Technical-bar .bar .progress-line {
     position: relative;
     border-radius: 0.625rem;
@@ -396,7 +397,7 @@ section {
     position: absolute;
     padding: 0.0625rem 0.5rem;
     background-color: #000;
-    color: #fff;
+    color: var(--white);
     font-size: 0.75rem;
     border-radius: 0.1875rem;
     top: -1.75rem;
@@ -438,10 +439,10 @@ section {
     width: calc(50% - 1.25rem);
     height: 10.625rem;
     margin-bottom: 0.625rem;
-    background-color: #051129;
+    background-color: var(--other);
     border-radius: 0.625rem;
     padding: 1.25rem;
-    box-shadow: 0 0 10px #000;
+    box-shadow: 0 0 10px var(--blue);
 }
 
 .radial-bars .radial-bar svg {
@@ -455,7 +456,7 @@ section {
 
 .radial-bars .radial-bar .progress-bar {
     stroke-width: 0.625rem;
-    stop-color: #000;
+    stop-color: #000000;
     fill: transparent;
     stroke-dashoffset: 502;
     stroke-dasharray: 502;
@@ -543,12 +544,13 @@ section {
     opacity: 0;
 }
 
+
 .radial-bar .text {
     width: 100%;
     position: absolute;
     text-align: center;
     left: 50%;
-    bottom: -0.3125rem;
+    bottom: -0.1rem;
     transform: translateX(-50%);
     font-size: 1. 0625rem;
     font-weight: 500;
@@ -587,7 +589,7 @@ section {
     border-radius: 20px;
     border-right: 0.625rem;
     transition: background 0.5s, transform 0.5s;
-    box-shadow: 1px 1px 20px #012290f7, 1px 1px 40px #012290f7;
+    box-shadow: 1px 1px 20px var(--blue), 1px 1px 40px var(--blue);
 
 }
 
@@ -638,7 +640,7 @@ section {
     color: black;
     margin-top: 1.5rem;
     font-size: 1.5rem;
-    background: #fff;
+    background: var(--white);
     width: 3.75rem;
     height: 3.75rem;
     display: flex;
@@ -675,16 +677,16 @@ section {
 
 .contact-text h4 {
     margin: 5.625rem;
-    color: rgb(228, 228, 228);
+    color: var(--white);
     font-size: 1.25rem;
     font-weight: 600;
 }
 
 .contact-text p {
-    color: rgb(117, 117, 117);
+    color: var(--white);
     font-size: 1.25rem;
     line-height: 1.875;
-    margin-bottom: 1.25rem;
+    margin: 1.25rem auto;
 }
 
 .contact-list {
